@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css"> -->
+    <script src="onsen/js/onsenui.min.js"></script>
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+
+    <script src="onsen/js/onsenui.js"></script>
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="onsen/css/onsen-css-components.css">
+    <link rel="stylesheet" href="onsen/css/onsenui.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <style>
+     .page__background {
+            background-image: url("de2.jpg");
+            }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 50%;
+            height: 50%;
+            padding: 20 20px;
+            margin-bottom: 25px;
+        }
+
+        /* Remove extra left and right margins, due to padding in columns */
+        .row {
+            margin: 0 0px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* this adds the "card" effect */
+            padding: 16px;
+            text-align: center;
+            background-color: rgb(252, 130, 81);
+        }
+
+        /* Responsive columns - one column layout (vertical) on small screens */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 50%;
+
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+    <div class="toolbar">
+        <div class="toolbar__left">
+        </div>
+        <div class="toolbar__center">
+            Food category
+        </div>
+
+        <div class="toolbar__right">
+        </div>
+    </div>
+
+        <ons-tabbar id="tabbar" >
+            <ons-tab page="page1.html" active></ons-tab>
+            <ons-tab page="page2.html"></ons-tab>
+            <ons-tab page="page3.html"></ons-tab>
+        </ons-tabbar>
+    </ons-page>
+
+    <template id="page1.html" >
+        <ons-page>
+            
+            <div class="row">
+                <div class="column">
+                    <div class="card"><img src="food.png" alt="Smiley face" height="65" width="65">
+                        <br>Normal food </div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="fastfood.png" alt="Smiley face" height="65" width="65">
+                        <br>Fast food </div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="healthy.png" alt="Smiley face" height="65" width="65">
+                        <br>Healthy food </div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="dessert.png" alt="Smiley face" height="65" width="65">
+                        <br>Dessert </div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="drink.png" alt="Smiley face" height="62" width="62">
+                        <br>Bฺeverage</div>
+                </div>
+                <div class="column">
+                    <div class="card"><img src="fruits.png" alt="Smiley face" height="65" width="65">
+                        <br>Fruits</div>
+                </div>
+        
+            </div>
+    </template>
+
+</body>
+
+</html>
